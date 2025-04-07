@@ -3,10 +3,10 @@ logs
 *.log
 npm-debug.log*
 
-.env
-node_modules
-dist
+/node_modules
+/dist
 dist-ssr
+.env
 *.local
 
 # Editor directories and files

@@ -1,7 +1,6 @@
-import { Request, Response } from "express";
+import express, { Request, Response } from "express";
+import path from "node:path";
 
-const express = require("express");
-const path = require("node:path");
 const router = express.Router();
 
 router.get(["/", "/index"], (request: Request, response: Response) => {

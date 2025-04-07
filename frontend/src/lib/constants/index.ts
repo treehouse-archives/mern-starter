@@ -1,3 +1,8 @@
+import mongoIcon from "/src/assets/images/mongodb.svg";
+import expressIcon from "/src/assets/images/express.svg";
+import reactIcon from "/src/assets/images/react.svg";
+import nodeIcon from "/src/assets/images/nodejs.svg";
+
 export const navLinks = [
   { href: "/", title: "Home" },
   { href: "/about", title: "About" },
@@ -5,8 +10,8 @@ export const navLinks = [
 ];
 
 export const heroIcons = [
-  { icon: "/src/assets/images/mongodb.svg", title: "MongoDB Icon" },
-  { icon: "/src/assets/images/express.svg", title: "ExpressJS Icon" },
-  { icon: "/src/assets/images/react.svg", title: "ReactJS Icon" },
-  { icon: "/src/assets/images/nodejs.svg", title: "NodeJS Icon" },
+  { icon: mongoIcon, title: "MongoDB Icon" },
+  { icon: expressIcon, title: "ExpressJS Icon" },
+  { icon: reactIcon, title: "ReactJS Icon" },
+  { icon: nodeIcon, title: "NodeJS Icon" },
 ];
