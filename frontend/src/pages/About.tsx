@@ -1,3 +1,4 @@
+import Button from "@/components/ui/Button";
 import useTitle from "@/lib/hooks/useTitle";
 
 function About() {
@@ -16,7 +17,7 @@ function About() {
           MongoDB integration for easy data management.
         </p>
 
-        <div className="flex justify-between">
+        <div className="flex-between">
           <div className="space-y-1.5">
             <h3>Frontend</h3>
             <ul>
@@ -37,6 +38,12 @@ function About() {
               <li>Cookie-parser</li>
             </ul>
           </div>
+        </div>
+
+        <div className="flex-center">
+          <Button>
+            <a href="https://github.com/treehouse-archives/react-starter">Github</a>
+          </Button>
         </div>
       </div>
     </section>

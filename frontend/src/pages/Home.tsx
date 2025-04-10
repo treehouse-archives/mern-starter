@@ -1,11 +1,13 @@
 import Button from "@/components/ui/Button";
 import { heroIcons } from "@/lib/constants";
 import useTitle from "@/lib/hooks/useTitle";
-import { useState } from "react";
+import { increment, selectCount } from "@/services/counter/counterSlice";
+import { useDispatch, useSelector } from "react-redux";
 
 const Home = () => {
   useTitle("Home");
-  const [count, setCount] = useState(0);
+  const count = useSelector(selectCount);
+  const dispatch = useDispatch();
 
   return (
     <section className="flex-center flex-col space-y-5 text-center md:space-y-10">
@@ -18,7 +20,7 @@ const Home = () => {
           <img src={icon.icon} alt={icon.title} key={idx} className="size-28 md:size-32 lg:size-44" />
         ))}
       </div>
-      <Button onClick={() => setCount((prev) => prev + 1)}>Count: {count}</Button>
+      <Button onClick={() => dispatch(increment())}>Count: {count}</Button>
     </section>
   );
 };

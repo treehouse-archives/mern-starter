@@ -6,7 +6,6 @@ import nodeIcon from "/src/assets/images/nodejs.svg";
 export const navLinks = [
   { href: "/", title: "Home" },
   { href: "/about", title: "About" },
-  { href: "https://github.com/the-testing-oak/mern-starter", title: "Github" },
 ];
 
 export const heroIcons = [
