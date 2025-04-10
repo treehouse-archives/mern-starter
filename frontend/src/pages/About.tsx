@@ -42,7 +42,7 @@ function About() {
 
         <div className="flex-center">
           <Button>
-            <a href="https://github.com/treehouse-archives/react-starter">Github</a>
+            <a href="https://github.com/treehouse-archives/mern-starter">Github</a>
           </Button>
         </div>
       </div>
